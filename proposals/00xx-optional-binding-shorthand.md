@@ -30,8 +30,8 @@ thinking about naming variables and removes the unnecessary step.
 
 ## Proposed solution
 
-Compare the following
-```
+Compare the following:
+```swift
 // before
 if let thing = thing, otherThing = otherThing, moreThings = moreThings where thing > 0 {
   // ...
