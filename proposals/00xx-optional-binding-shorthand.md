@@ -70,5 +70,5 @@ identical, but not suggesting the change for renamed variables.
 ## Alternatives considered
 
 Alternatively, the Swift syntax could stay the same and developers would be
-_forced_ to retype _thousands_ of redundant variable names to unwrap them. :)
+_forced_ to retype _thousands_ of redundant variable names to unwrap them. :stuck_out_tongue:
 
