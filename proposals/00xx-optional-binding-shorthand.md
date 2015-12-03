@@ -23,9 +23,9 @@ value with often meaningless and unhelpful variants of the original variable or
 constant name. For example people often write `if let newFoo = foo {}` or worse
 something like `unwrappedFoo`. While this renaming _can_ add value, I generally
 believe that it doesn't, but rather adds overhead to mentally parsing code.
-Introducing a shorthand syntax would encourage simply masking a carefully chosen
-variable name inside the block, which reduces the amount of time that goes into
-thinking about naming variables and removes the unnecessary step.
+Introducing a shorthand syntax would encourage simply shadowing a carefully
+chosen variable name inside the block, which reduces the amount of time that
+goes into thinking about naming variables and removes the unnecessary step.
 
 
 ## Proposed solution
