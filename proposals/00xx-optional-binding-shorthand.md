@@ -37,21 +37,19 @@ if let thing = thing, otherThing = otherThing, moreThings = moreThings where thi
   // ...
 }
 
+guard let thing = thing else { return }
+
 // after
 if let thing, otherThing, moreThings where thing > 0 {
   // ...
 }
+
+guard let thing else { return }
+
 ```
 
-This syntax proposal encourages shorter, more readable lines. This is especially
+This syntax proposal encourages cleaner, shorter, more readable lines. This is especially
 valuable when chaining multiple bindings together and using where clauses.
-
-
-
-Describe your solution to the problem. Provide examples and describe
-how they work. Show how your solution is better than current
-workarounds: is a cleaner, safer, or more efficient?
-
 
 ## Detailed design
 
@@ -62,8 +60,8 @@ TODO
 
 This change would introduce a new syntax that could be adopted, but would not
 require any changes to existing code. An automatic migration to encourage
-adoption of this syntax would be relatively simple, if desired. If desired, I
-would suggest doing the automatic replacement when both sides of the `=` are
+adoption of this syntax would be relatively simple, if desired. If so, I would
+suggest doing the automatic replacement when both sides of the `=` are
 identical, but not suggesting the change for renamed variables.
 
 
